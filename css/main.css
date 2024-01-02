@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.banner {
+	background-color: #0B70FE;
+	color: white;
+	padding: 50px 20px;
+}
+
+.banner h1 {
+	margin: 0 0 10px 0;
+	font-family: 'Jomhuria', sans-serif;
+	font-size: 64px;
+	font-weight: 400;
+	color: #FF5A00;
+	text-align: center;
+}
+
+.banner .researcher {
+	font-family: 'AR One Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 400;
+	text-align: left;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
+.banner .hobby {
+	font-family: 'AR One Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	font-style: italic;
+	color: #9EC5FE;
+	text-align: left;
+	padding-left: 32px;
+	padding-right: 32px;
+	padding-top: 32px;
+}
+
+.greeting {
+	color: #FF9F00;
+}
+
+.name {
+	color: #FFCF00;
+}
+
+.wave1 {
+	width: 100%;
+	height: 45px;
+}
+
+.painter,
+.writer,
+.gamer {
+	width: 16px;
+	height: 16px;
+}
+
+.section {
+	background-color: #fff;
+	padding-left: 32px;
+	padding-right: 32px;
+	margin-bottom: 10px;
+}
+
+.section h2 {
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+	color: #0B70FE;
+}
+
+.section p {
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	color: black;
+	letter-spacing: 2%;
+	line-height: 1.5;
+}
+
+.icon-h2 {
+	display: flex;
+	align-items: center;
+}
+
+.icon-visualisation {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background-image: url('https://drive.google.com/uc?export=view&id=1Xr3KLoBQmOAV3ONE9WjR5J9V4Xi-GNH4');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.icon-industry {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background-image: url('https://drive.google.com/uc?export=view&id=15NyQOrnDOENqQN8u-a5irlWwbEI0Q-LH');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.icon-analysis {
+	display: inline-block;
+	width: 75px;
+	height: 75px;
+	background-image: url('https://drive.google.com/uc?export=view&id=1nIRfyPcpLRuxhvc_9nDBpkeHT8Ofh3gV');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-right: 10px;
+}
+
+.about {
+	padding: 0px;
+	padding-bottom: 50px;
+
+	background-color: #7DDCFF;
+}
+
+.about h2 {
+	color: #333;
+	margin-bottom: 0px;
+	padding-top: 80px;
+	font-size: 58px;
+	font-family: 'Jomhuria', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	background-color: white;
+}
+
+.about p {
+	color: black;
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: left;
+	padding-top: 15px;
+	padding-left: 32px;
+	padding-right: 32px;
+	letter-spacing: 2%;
+	line-height: 1.5;
+}
+
+.about .profile-picture {
+	width: 250px;
+}
+
+.about .picture-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.about .wave-row {
+	display: flex;
+	background-color: white;
+}
+
+.about .wave2 {
+	width: 100%;
+}
+
+
+.btn {
+	border: none;
+	border-radius: 12px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	background-color: #0B70FE;
+	padding: 15px 25px;
+	margin: 20px auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn span {
+	position: relative;
+	z-index: 1;
+}
+
+.btn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 300%;
+	width: 140%;
+	background: #FF5A00;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+@media (min-width: 768px) {
+
+	.banner h1 {
+		font-size: 150px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.banner .researcher {
+		font-size: 40px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.banner .hobby {
+		font-size: 24px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.wave1 {
+		width: 100%;
+		height: 120px;
+	}
+
+	.painter,
+	.writer,
+	.gamer {
+		width: 23px;
+		height: 23px;
+	}
+
+	.section {
+		background-color: #fff;
+		padding-right: 50px;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: center;
+	}
+
+	.section-total {
+		padding-bottom: 5px;
+	}
+
+	.section h2 {
+		font-size: 32px;
+		margin: 0 0 10px 0;
+	}
+
+	.section p {
+		font-size: 16px;
+		width: 70%;
+		padding-right: 50px;
+		padding-left: 20px;
+	}
+
+	.icon-h2 {
+		display: flex;
+		flex-direction: column;
+		width: 250px;
+	}
+
+	.icon-visualisation {
+		width: 100px;
+		height: 100px;
+	}
+
+	.icon-industry {
+		width: 100px;
+		height: 100px;
+	}
+
+	.icon-analysis {
+		width: 100px;
+		height: 100px;
+	}
+
+	.about h2 {
+		font-size: 100px;
+	}
+
+	.about p {
+		font-size: 16px;
+		padding-top: 20px;
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 20px;
+	}
+
+	.about .profile-picture {
+		width: 300px;
+	}
+
+	.btn {
+		font-size: 16px;
+	}
+
+	.about .wave2 {
+		height: 120px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.banner h1 {
+		font-size: 150px;
+		padding-left: 100px;
+		padding-right: 100px;
+		text-align: left;
+	}
+
+	.banner .researcher {
+		font-size: 40px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.banner .hobby {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.wave1 {
+		width: 100%;
+		height: 200px;
+	}
+
+	.painter,
+	.writer,
+	.gamer {
+		width: 23px;
+		height: 23px;
+	}
+
+	.section-total {
+		display: flex;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.section {
+		margin-bottom: 20px;
+		width: 33%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.section p {
+		width: 100%;
+		padding: 0px;
+	}
+
+
+	.icon-visualisation,
+	.icon-industry,
+	.icon-analysis {
+		width: 150px;
+		height: 150px;
+	}
+
+	.about h2 {
+		margin-top: 20px;
+	}
+
+	.about p {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.wave2 {
+		height: 100px;
+	}
+
+	.about .profile-picture {
+		width: 350px;
+	}
+
+}

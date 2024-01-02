@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.title {
+	margin: 20px 0 10px 0;
+	font-family: 'Jomhuria', sans-serif;
+	font-size: 64px;
+	font-weight: 400;
+	color: #2340DB;
+	text-align: center;
+}
+
+.intro {
+	margin: 0 25px 0 25px;
+	font-family: 'inter', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: black;
+	text-align: left;
+	letter-spacing: 2%;
+	line-height: 1.5;
+}
+
+#main {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 30px 0 100px 0;
+}
+
+#wrapper {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	padding: 20px 10px;
+	justify-content: space-around;
+	align-items: center;
+	gap: 20px;
+}
+
+#wrapper i {
+	font-size: 50px;
+	pointer-events: none
+}
+
+#image-container {
+	height: 100%;
+	width: 1000px;
+	overflow: hidden;
+	padding: 0px 30px;
+
+}
+
+#image-carousel {
+	display: flex;
+	height: 100%;
+	width: auto;
+	gap: 100px;
+	position: relative;
+}
+
+#image-carousel img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 25px;
+	position: absolute;
+	transition: 1s;
+	padding: 0px 15px;
+}
+
+#image-carousel img:hover {
+	cursor: pointer;
+}
+
+.painting img {
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	display: block;
+}
+
+.painting:hover img {
+	transform: scale(1.01);
+	opacity: 0.8;
+}
+
+.note {
+	font-family: "Mulish", san-serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #6C757D;
+}
+
+button {
+	cursor: pointer;
+	padding: 5px;
+	font-size: 12px;
+	background-color: #CED4DA;
+	color: white;
+	border-radius: 10px;
+	border: none;
+}
+
+button:hover {
+	color: white;
+	transform: scale(1.1);
+	transition: transform 0.2s ease-in-out;
+	background-color: #FF9F00;
+}
+
+
+button:active {
+	transform: scale(0.9);
+	transition: transform 0.2s ease-in-out;
+	background-color: #FF5A00;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+	margin: auto;
+	padding-top: 100px;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	font-family: 'inter', sans-serif;
+	font-size: 24px;
+}
+
+.close {
+	position: absolute;
+	top: 60px;
+	right: 10px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #FF5A00;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+	.intro {
+		margin: 30px 100px 30px 100px;
+		font-size: 21px;
+	}
+
+	.title {
+		font-size: 150px;
+		margin-top: 40px;
+	}
+
+	#main {
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+
+	#wrapper {
+		height: 60vh;
+		width: 100%;
+		display: flex;
+		padding: 20px 50px;
+		justify-content: space-around;
+		align-items: center;
+		gap: 20px;
+	}
+
+	#wrapper i {
+		font-size: 50px;
+		pointer-events: none
+	}
+
+	#image-container {
+		height: 100%;
+		width: 1000px;
+		overflow: hidden;
+		padding: 0px 30px;
+
+	}
+
+	#image-carousel {
+		display: flex;
+		height: 100%;
+		width: auto;
+		gap: 100px;
+		position: relative;
+	}
+
+	#image-carousel img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 25px;
+		position: absolute;
+		transition: 1s;
+
+		padding: 0px 15px;
+	}
+
+	button {
+		cursor: pointer;
+		padding: 10px;
+		color: white;
+		border-radius: 10px;
+		border: none;
+	}
+
+	button:hover {
+		transform: scale(1.1);
+		transition: transform 0.2s ease-in-out;
+		background-color: #FF9F00;
+	}
+
+
+	button:active {
+		transform: scale(0.9);
+		transition: transform 0.2s ease-in-out;
+		background-color: #FF5A00;
+	}
+}

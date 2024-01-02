@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Gallery</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="css/my-gallery.css">
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+</head>
+
+<body>
+	<nav class="navbar sticky">
+		<a href="index.html" class="logo"><span class="logo-first">TONG </span>&nbsp<span class="logo-last">WU</span></a>
+		<div class="menu-btn">
+			<div class="menu-btn__lines"></div>
+		</div>
+		<ul class="menu-items">
+			<li class="dropdown">
+				<a href="#" class="menu-item first-item expand-btn">About Me</a>
+				<ul class="dropdown-menu sample">
+					<li><a href="my-story.html" class="menu-item">My Story</a></li>
+					<li><a href="https://drive.google.com/file/d/1f9iopa6niGMQO1JLVyP-6jt0dhvYpwfj/view?usp=sharing"
+							class="menu-item">My Resume</a></li>
+					<li><a href="my-gallery.html" class="menu-item">My Gallery</a></li>
+				</ul>
+			</li>
+			<li><a href="projects.html" class="menu-item first-item">Projects</a></li>
+			<li><a href="contact.html" class="menu-item first-item">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="overlay"></div>
+
+	<div id="main">
+		<div class="title">My Gallery</div>
+		<div class="intro">
+			&nbsp;&nbsp;&nbsp;&nbsp;Welcome to Tong’s Gallery!
+			<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Discover my art collection, including sketches, clay art, digital paintings,
+			acrylic paintings, and Chinese traditional ink paintings. I began studying drawing at 3 and, despite pausing
+			art classes in high school due to coursework pressure, my exploration of art never stopped. I enjoy trying
+			different styles, tools, and textures because I believe everything is beautiful in its own way, and each
+			method of expressing beauty is unique.
+		</div>
+		<div class="note">
+			Tap on a painting for a peek into its story!
+		</div>
+		<div id="wrapper">
+			<div><button class="active" id="prev" onclick="prev()"><i class="fa-solid fa-chevron-left"></i></button></div>
+			<div id="image-container">
+				<div id="image-carousel">
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1qKjf_yzWrawOeqWeM0hd44XH_AlWOPGZ" alt="Moutain">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1qyLdgEI01emjN3NrA3AmTLfrRrD3_ybo" alt="Feather">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1rs2qeQDVXn_G5sG1cO3fucerorz53kXv"
+							alt="Cat & Fish">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=18HhrrNMX7kOnPHleNXeaN-fS5vn04KNm" alt="Korok">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1ZxTP7QVN2Bw3dT1P29CX3CwJv8jdhp5o"
+							alt="Cat & Fire">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1cqZ7fZpmQmidO3DrCOMinr8WS8onwVrS" alt="Naomi">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1lks9tGCLF4nDwVy_7q9awOJ0UjtMJgXZ" alt="Goddess">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1oCv-G3Nsldd9MbTnr6HaJXCZm11r896q"
+							alt="Universe">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1oSJ4Pa3r_I-yt2r3j6S3CLU1XtjzqMSs" alt="Movie">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1S4mu3mkAE14w6lmCiLE0kq2WRf4aNE6g" alt="Autumn">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1W7D071wR8G9Yo-xbjimTKy3Lr7dEW2nf" alt="Spring">
+					</div>
+					<div class="painting">
+						<img src="https://drive.google.com/uc?export=view&id=1XMXqz8X8-9m7mLH1iIyYCa2WFBLL-mFz" alt="Winter">
+					</div>
+				</div>
+			</div>
+			<div><button class="active" id="next" onclick="next()"><i class="fa-solid fa-chevron-right"></i></button></div>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="modalImage">
+		<div id="caption"></div>
+	</div>
+
+	<div class="footer">
+		<a class="footer-connect" href="contact.html">Let's connect!</a>
+		<a class="footer-branding" href="index.html"><span class="logo-first">TONG </span>&nbsp<span
+				class="logo-last">WU</span></a>
+	</div>
+
+	<script src="js/my-gallery.js"></script>
+</body>
+
+</html>

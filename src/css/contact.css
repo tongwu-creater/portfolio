@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+
+.title {
+	text-align: center;
+	max-width: 300px;
+	margin: 0px auto;
+}
+
+.title h2 {
+	font-family: Jomhuria, sans-serif;
+	font-size: 64px;
+	font-weight: 400;
+	color: #2340DB;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+.title p {
+	font-family: Mulish, sans-serif;
+	font-style: italic;
+	font-size: 16px;
+	color: #FF5A00;
+	margin-top: 0px;
+}
+
+.content {
+	max-width: 360px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 0px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.number {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.content input,
+.content textarea {
+	width: 80%;
+	padding: 16px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 6px;
+	color: #6C757D;
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+}
+
+.btn {
+	border: none;
+	border-radius: 12px;
+	display: block;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+	color: #fff;
+	font-weight: 700;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	background-color: #0B70FE;
+	padding: 11px 25px;
+	margin: 20px auto;
+}
+
+.icon-instagram,
+.icon-wechat,
+.icon-linkedin {
+	transition: transform 0.3s ease, opacity 0.3s ease;
+	display: block;
+}
+
+.icon-linkedin:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.icon-instagram:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+.icon-wechat:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn span {
+	position: relative;
+	z-index: 1;
+}
+
+.btn:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 300%;
+	width: 140%;
+	background: #FF5A00;
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+	transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+	-webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+	transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.content textarea {
+	height: 100px;
+	resize: vertical;
+}
+
+.content-title {
+	text-align: center;
+}
+
+.content-title h2 {
+	display: inline-block;
+	font-family: Inter, sans-serif;
+	font-size: 20px;
+	color: #495057;
+	font-weight: 900;
+	margin-bottom: 10px;
+	margin-top: 50px;
+}
+
+.contact-details {
+	text-align: center;
+}
+
+.contact-details h2 {
+	margin-bottom: 20px;
+	margin-top: 50px;
+	font-family: Inter, sans-serif;
+	font-size: 20px;
+	color: #495057;
+	font-weight: 900;
+}
+
+.contact-icons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.social-item {
+	float: left;
+	padding-bottom: 5px;
+}
+
+.accent-text {
+	border-width: 0px;
+	font-size: 14px;
+	font-family: 'Mulish', sans-serif;
+	color: #FF5A00;
+	font-style: italic;
+}
+
+.contact-item {
+	text-align: center;
+	margin: 0 10px;
+}
+
+.icon {
+	display: inline-block;
+}
+
+.icon-phone,
+.icon-email {
+	width: 30px;
+	height: 30px;
+}
+
+.icon-instagram {
+	width: 30px;
+	height: 30px;
+	margin-right: 0px;
+}
+
+.icon-linkedin {
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+}
+
+.icon-wechat {
+	width: 30px;
+	height: 30px;
+	margin-left: 0px;
+}
+
+.contact-info {
+	margin-top: 5px;
+	font-size: 12px;
+	font-family: 'Inter', sans-serif;
+}
+
+.content input[type="text"],
+.content input[type="email"],
+.content input[type="tel"],
+.content textarea {
+	transition: transform 0.3s ease;
+	border: 1px solid #ccc;
+}
+
+.content input[type="text"]:hover,
+.content input[type="email"]:hover,
+.content input[type="tel"]:hover,
+.content textarea:hover {
+	transform: scale(1.05);
+	border-color: #2340DB;
+}
+
+.content input[type="text"]:focus,
+.content input[type="email"]:focus,
+.content input[type="tel"]:focus,
+.content textarea:focus {
+	outline: none;
+	border-color: #FF5A00;
+	box-shadow: 0 0 0 2px rgba(255, 90, 0, 0.5);
+}
+
+.content form {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+
+	.title {
+		max-width: 600px;
+	}
+
+	.title h2 {
+		font-size: 150px;
+	}
+
+	.title p {
+		font-size: 32px;
+	}
+
+	.content-title {
+		margin-top: 60px;
+	}
+
+	.content {
+		max-width: 80%;
+	}
+
+	.content input,
+	.content textarea {
+		width: 100%;
+	}
+
+	.name,
+	.number {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	.name input,
+	.number input {
+		width: calc(50% - 25px);
+	}
+
+
+
+	.contact-details {
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+
+	.icon-phone,
+	.icon-email,
+	.icon-linkedin,
+	.icon-instagram,
+	.icon-wechat {
+		width: 50px;
+		height: 50px;
+	}
+
+	.accent-text {
+		font-size: 24px;
+	}
+
+	.contact-info {
+		font-size: 20px;
+	}
+
+	.contact-item {
+		margin-left: 40px;
+		margin-right: 50px;
+	}
+
+	.btn {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.title h2 {
+		margin-top: 80px;
+	}
+
+	.content {
+		max-width: 50%;
+	}
+
+	.name,
+	.number {
+		gap: 120px;
+	}
+
+	.name,
+	.number {
+		margin-bottom: 30px;
+	}
+
+	.title {
+		max-width: 600px;
+	}
+
+	.title h2 {
+		font-size: 150px;
+	}
+
+	.title p {
+		font-size: 32px;
+	}
+
+	.content-title {
+		margin-top: 60px;
+	}
+
+	.content {
+		max-width: 80%;
+	}
+
+
+
+	.name,
+	.number {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	.name input,
+	.number input {
+		width: calc(50% - 25px);
+	}
+
+
+
+	.contact-details {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+	.icon-phone,
+	.icon-email,
+	.icon-linkedin,
+	.icon-instagram,
+	.icon-wechat {
+		width: 50px;
+		height: 50px;
+	}
+
+	.accent-text {
+		font-size: 24px;
+	}
+
+	.content-title h2 {
+		margin-bottom: 20px;
+	}
+
+	.contact-details {
+		padding-top: 150px;
+		padding-bottom: 100px;
+	}
+
+	.content textarea {
+		height: 200px;
+	}
+
+	.content-title h2 {
+		font-size: 32px;
+	}
+
+	.contact-details h2 {
+		font-size: 32px;
+	}
+
+	.contact-item {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}

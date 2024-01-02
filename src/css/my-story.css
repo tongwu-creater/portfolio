@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&display=swap');
+
+.banner {
+	background-color: #0B70FE;
+	color: white;
+	padding: 50px 20px;
+}
+
+.banner .intro {
+	font-family: 'AR One Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	padding-left: 32px;
+	padding-right: 32px;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+.wave1 {
+	width: 100%;
+	height: 45px;
+}
+
+.story {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 20px;
+}
+
+.story h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: 20px;
+	color: black;
+	letter-spacing: 2%;
+	line-height: 1.5;
+}
+
+.story p {
+	font-family: 'Inter', sans-serif;
+	font-size: 14px;
+	color: black;
+	letter-spacing: 2%;
+	line-height: 1.5;
+	padding-bottom: 50px;
+}
+
+.story img {
+	width: 90%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 6px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.story .image-big {
+	display: none;
+}
+
+.story .image-small {
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.banner .intro {
+		font-size: 21px;
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.story {
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	.story h2 {
+		font-size: 40px;
+	}
+
+	.story img {
+		height: 350px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.story p {
+		font-size: 21px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.story {
+		display: flex;
+		padding-left: 100px;
+		padding-right: 100px;
+		padding-top: 70px;
+	}
+
+	.story>* {
+		flex: 1;
+		width: 50%;
+	}
+
+	.story-img-left {
+		text-align: left;
+	}
+
+	.story-img-left img {
+		width: 80%px;
+		height: 350px;
+		display: block;
+		margin-left: 0px;
+		margin-right: auto;
+		padding-top: 10px;
+	}
+
+	.story-img-right {
+		text-align: right;
+	}
+
+	.story-img-right img {
+		width: 80%;
+		height: 350px;
+		display: block;
+		margin-left: auto;
+		padding-top: 10px;
+	}
+
+	.p-h2-left {
+		padding-bottom: 50px;
+	}
+
+	.p-h2-right {
+		padding-bottom: 50px;
+	}
+
+	.story h2 {
+		padding-bottom: 50px;
+	}
+
+	.story .image-small {
+		display: none;
+	}
+
+	.story .image-big {
+		display: block;
+	}
+}
